@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R4ZMKW83TS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R4ZMKW83TS');
+</script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Programación de tareas repetitivas en un Sistema Operativo</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Juan Manuel Vicente Fenoy" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<meta name="description" content="Los alumnos en esta unidad van a trabajar con la shell, consola o terminal del sistema operativo como lenguaje de scripting (guiones). Creando y depurando sus propios guiones.  " />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="exe-rubrics.css" />
+<script type="text/javascript" src="exe-rubrics.js"></script><meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>Programación de tareas repetitivas en un Sistema Operativo</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_ProgramacindetareasrepetitivasenunSistemaOperativo" class="nodeTitle">Programación de tareas repetitivas en un Sistema Operativo</h1>
+</header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id1-0">
+<div class="iDevice emphasis0">
+<div id="ta1_170" class="block iDevice_content">
+<p style="text-align: center;"><strong>Descripción de la tarea:</strong></p>
+<p><strong>Título descriptivo:</strong> Programación de tareas repetitivas en un Sistema Operativo</p>
+<p><strong>Centro de interés o temática: </strong>Scripting en sistemas operativos<br /><strong></strong></p>
+<p><strong>Nivel al que va dirigido:</strong> 2º curso del CFGS de Administración de Sistemas Informáticos en Red<br /><strong></strong></p>
+<p><strong>Temporalización aproximada:</strong> La unidad se programa para unas 24 sesiones en total, lo que supone la práctica totalidad de la tercera evaluación.<br /><strong></strong></p>
+<p><strong>Materia o materias implicadas:</strong> El módulo es Administración de Sistemas Operativos. En concreto vamos a tocar el Resultado de Aprendizaje nº 7 (Utiliza lenguajes de guiones en sistemas operativos, describiendo su aplicación y administrando servicios del sistema operativo).<br /><strong></strong></p>
+<p><strong>Idioma</strong>: Español, para la realización de la tarea e inglés para la documentación y ayuda de los comandos del sistema operativo empleado.</p>
+<p></p>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Tarea" class="nodeTitle">Tarea</h1>
+</header>
+<article class="iDevice_wrapper CasopracticofpdIdevice em_iDevice em_iDevice_casopracticofpd" id="id2-3">
+<div class="iDevice emphasis_casopracticofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_163" class="block iDevice_content">
+<p>Normalmente, los estudiantes matriculados en el ciclo de ASIR suelen ser, dentro del ámbito de Informática y Comunicaciones, quienes muestran mayor reticencia hacia las tareas relacionadas con la programación.</p>
+<p>Con esta actividad queremos demostrar que eso no es cierto, y que nuestra habilidad para programar es comparable a la de los alumnos de los ciclos enfocados en desarrollo.</p>
+<p>¿Y qué mejor forma de aprender y apoyar a nuestros compañeros que grabando un vídeo en el que expliquemos scripts?</p>
+<p><br /><img src="pexels-roberto-nickson-7238759.jpg" alt="Imagen de un estudio" title="Estudio de un streamer" width="353" height="235" style="font-size: 16.8px; color: #888888; float: right;" /></p>
+<figure class="exe-figure exe-image float-right license-CC0" style="width: 353px;">
+<div class="figcaption header"><strong>Estudio de un streamer</strong></div>
+<figcaption class="figcaption"><a href="https://www.pexels.com/es-es/@rpnickson/" target="_blank" class="author" rel="noopener">https://www.pexels.com/es-es/@rpnickson/</a>. <a href="https://www.pexels.com/es-es/foto/escritorio-oficina-mesa-tecnologia-7238759/" target="_blank" class="title" rel="noopener"><em>Escritorio oficina mesa tecnología</em></a> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id6-3">
+<div class="iDevice emphasis0" >
+<div id="ta6_120_2" class="block iDevice_content">
+<div class="exe-text"><h2 style="text-align: center;">Descripción de la tarea</h2>
+<p>En esta tarea vais a trabajar con la <strong>shell</strong> (consola) del sistema operativo como lenguaje de <strong>scripting</strong> (guiones). Creando y depurando vuestros propios guiones en <strong><abbr title="Bourne-again shell">bash</abbr></strong>.</p>
+<figure class="exe-figure exe-image float-right license-CC0" style="width: 400px;">
+<div class="figcaption header"><strong>Consola de Linux</strong></div>
+<img src="800px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png" alt="Consola Bash" title="Linux command-line" width="400" height="300" />
+<figcaption class="figcaption"><a href="https://commons.wikimedia.org/wiki/User:ZxxZxxZ" target="_blank" class="author" rel="noopener">ZxxZxxZ</a>. <a href="https://upload.wikimedia.org/wikipedia/commons/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png" target="_blank" class="title" rel="noopener"><em>Linux command-line</em></a> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Para superar esta unidad, cada uno de vosotros deberá realizar dos vídeos que subirá al foro de la unidad en Moodle.</p>
+<p>En el primero de ellos vais a explicar con ejemplos los comandos de la shell que habéis empleado en vuestro script. En el segundo de ellos os tocará explicar las estructuras de programación que has empleado y la finalidad del script. En ambos casos, el protagonismo lo tendrá la pantalla, y en especial la consola, pero en los vídeos debéis aparecer en una pequeña ventana explicando lo que se va haciendo. Así que sí, el vídeo tiene que ser editado.</p>
+<p>Los scripts de los compañeros serán diferentes entre sí, ya que debéis seleccionar vuestro ejercicio de la lista de propuestas, las temáticas abarcan el uso de ficheros del sistema, el uso y configuración de cuestas de usuario locales y de dominio, el uso y compartición de recursos como impresoras y el uso y configuración de la red, todos ellos temas axiales dentro del módulo y del propio CFGS.</p>
+<p>A la hora de hacer esta práctica vais a contar con los apuntes del profesor, las tareas resueltas en el aula y el tiempo suficiente para poder desarrollar la tarea.</p>
+<p>Para realizar los vídeos se os proporcionará OBS Studio, una aplicación libre y de código abierto. Además, las prácticas serán realizadas sobre Ubuntu, un sistema operativo también libre y de código abierto.</p>
+<p><strong>La tarea va a constar de 4 apartados:</strong></p>
+<ol>
+<li>Diseño de los scripts</li>
+<li>Implementación de los scripts</li>
+<li>Depuración de los scripts</li>
+<li>Grabación del vídeo explicativo</li>
+</ol></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-7">
+<header class="nodeDecoration">
+<h1 id="exenode_7_Listadodescripts" class="nodeTitle">Listado de scripts</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id15-7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Scripts a implementar</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Estos son los scripts a implementar, elige solamente uno de ellos, diséñalo, impleméntalo, depúralo y graba dos vídeos sobre él.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id16-7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Script 1</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Realiza un script Bash para la visualización de datos de los usuarios del sistema:</p>
+<p>Vamos a crear un script llamado <strong>info_usuario.sh</strong> que muestre la información de los usuarios del sistema.</p>
+<p>El script debe poder usarse de las siguientes formas:</p>
+<p>USO_1 (pasando usuario por opción): <strong>./info_usuario.sh -u &lt;usuario&gt;</strong><br />USO_2 (utilizar usuario actual): <strong>./info_usuario.sh</strong><br />USO_3 (todos los usuarios): <strong>./info_usuario.sh -t</strong><br />USO_4 (usuarios conectados): <strong>./info_usuario.sh -c</strong><br />USO_5 (ayuda): <strong>./info_usuario.sh -help</strong></p>
+<p>La información a mostrar será la siguiente:</p>
+<p><strong>USO_1</strong><br />Se debe generar un aviso si el usuario no existe, y salir con el estado -1.<br />Si el usuario está conectado.<br />Los grupos a los que pertenece, (número y nombre)<br />Número de archivos y directorios de los que el usuario es propietario.</p>
+<p><strong>USO_2</strong><br />Los grupos a los que pertenece, (número y nombre)<br />Número de archivos y directorios de los que el usuario es propietario.<br />Tiempo de conexión</p>
+<p><strong>USO_3</strong><br />Los grupos a los que pertenece, (número y nombre) cada usuario</p>
+<p><strong>USO_4</strong><br />Los grupos a los que pertenece, (número y nombre) cada usuario<br />La terminal a la que está conectado.</p>
+<p><strong>USO_5</strong><br />Una relación de las opciones y su resumen.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id17-7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Script 2</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta17_131_2" class="block iDevice_content">
+<div class="exe-text"><p>Realiza un script para la administración básica del sistema que presente un menú con las siguientes opciones.</p>
+<p>El script se llamará <strong>administra.sh</strong> y se ejecutará sin opciones. Una vez en ejecución mostrará un menú como el siguiente, sin que se vea lo que hay entre paréntesis:</p>
+<p><strong>Menú:</strong></p>
+<p><strong>1- Directorio de trabajo</strong> (se mostrará el nombre del directorio actual).<br /><strong>2- Crear archivo</strong> (se solicitará el nombre del archivo y se creará un archivo txt con el nombre solicitado).<br /><strong>3- Borrar archivo</strong> (se solicitará el nombre del archivo a borrar. En caso de existir se borrará y de no existir dará un mensaje de error).<br /><strong>4- Uso de la memoria</strong> (se mostrará la memoria libre del sistema)<br /><strong>5- Dirección</strong> (se mostrará la IP del sistema o un mensaje de error si no está conectado).<br /><strong>6- Salir</strong> (se finaliza la ejecución, mostrando el mensaje de Fin de ejecución).</p>
+<p><strong>Nota:</strong> este script solamente lo podrá ejecutar el root del sistema.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id18-7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Script 3</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_132_2" class="block iDevice_content">
+<div class="exe-text"><p>Realiza un script que controle los servicios del sistema. </p>
+<p>Vamos a realizar un script que apoyándose en systemctl nos muestre mensajes de los servicios del sistema. El script se llamará <strong>servicios.sh</strong> y se podrá usar de las siguientes formas:</p>
+<p><strong>USO_1:</strong> (lista servicios en un estado) <strong>./servicios.sh -l</strong> [parados|ejecución|habilitados|enmascarados]<br /><strong>USO_2:</strong> (para un servicio) <strong>./servicios.sh -p servicio</strong> (si el servicio no existe, o no está arrancado lanzará un mensaje de error)<br /><strong>USO_3</strong>: (arranca un servicio) <strong>./servicios.sh -a servicio</strong> (si el servicio no existe, o está arrancado lanzará un mensaje de error)<br /><strong>USO_4:</strong> (consulta el estado un servicio) <strong>./servicios.sh -c servicio</strong> (si el servicio no existe lanzará un mensaje de error)<br /><strong>USO_5:</strong> (ayuda del script) <strong>./servicios.sh -h</strong></p>
+<p><strong>Nota:</strong> este script solamente lo podrá ejecutar el root del sistema.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id19-7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Script 4</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_133_2" class="block iDevice_content">
+<div class="exe-text"><p>Realiza un script que dado un usuario nos de la siguiente información sobre los sus ficheros.</p>
+<p>El script se llamará <strong>ficheros.sh</strong> y solo admitirá un parámetro, que será un usuario. Del usuario pasado nos dará:</p>
+<p>Fichero <strong>más grande.</strong> <br />Fichero con la <strong>modificación más cercana</strong> en el tiempo.<br />Fichero <strong>más antiguo</strong>. <br /><strong>Tipo </strong>de fichero <strong>más común</strong>.<br /><strong>Espacio de disco</strong> que ocupan sus ficheros.<br /><strong>Número total</strong> de ficheros.<br />Por supuesto, en caso de no existir el usuario, de tener su home vacío, o de no pasar nada debe dar un mensaje de error.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-5">
+<header class="nodeDecoration">
+<h1 id="exenode_5_Recursos" class="nodeTitle">Recursos</h1>
+</header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id8-5">
+<div class="iDevice emphasis0">
+<div id="ta8_170" class="block iDevice_content">
+<h2>Para la realización de esta práctica vas a necesitar lo siguiente:</h2>
+<ul>
+<li>Tutoriales para empezar</li>
+<li>Simulador de consola para hacer pruebas</li>
+<li>Descargar las aplicaciones necesarias (editor de vídeo, hipervisor, sistema operativo, editor de scripts…)</li>
+</ul>
+<p><strong>Guía oficial de bash:</strong><br /><a href="https://www.gnu.org/software/bash/" target="_blank" title="Guía Bash" rel="noopener">Bash - GNU Project - Free Software Foundation</a></p>
+<p><strong>Tutorial sobre Bash</strong><br /><a href="https://www.softzone.es/linux/tutoriales/terminal-linux/" target="_blank" rel="noopener">Terminal de Linux: guía y comandos básicos que debemos saber (softzone.es)</a></p>
+<p><strong>Tutorial separado en apartados sobre Scripting en Bash:</strong><br /><a href="https://computernewage.com/2018/09/16/scripting-gnu-linux-introduccion/" target="_blank" title="Descubre el enorme poder de automatizar tareas" rel="noopener">Linux scripting. Descubre el enorme poder de automatizar tareas</a><br /><a href="https://computernewage.com/2018/11/01/scripting-linux-bash-introduccion/" target="_blank" title="Introducción a Bash" rel="noopener">Linux scripting con Bash. Introducción a Bash</a><br /><a href="https://computernewage.com/2018/12/25/scripting-linux-bash-sintaxis/" target="_blank" title="Sintaxis del lenguaje" rel="noopener">Linux scripting con Bash. Sintaxis del lenguaje</a><br /><a href="https://computernewage.com/2019/01/13/scripting-linux-bash-crear-ejecutar-script/#" title="Como crear y ejecutar tu primer script">Linxu scripting con Bash. Como crear y ejecutar tu primer script</a><br /><a href="https://computernewage.com/2019/03/09/scripting-linux-bash-ejecutar-script-arranque/" target="_blank" title="Ejecución durante el inicio del sistema" rel="noopener">Linux scripting con Bash. Ejecución durante el inicio del sistema</a><br /><a href="https://computernewage.com/2022/10/09/gnu-linux-scripting-bash-ejemplo-1/" target="_blank" title="Ejemplo: setup post-instalación para Ubuntu" rel="noopener">Linux scripting con Bash. Ejemplo: setup post-instalación para Ubuntu</a></p>
+<p><strong>Tutoriales OBS Studio para poder grabar vídeos</strong></p>
+<figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px;">
+<div class="figcaption header"><strong>TUTORIAL OBS STUDIO 2019 EN ESPAÑOL 🔥 - SIN LAG y para grabar GAMEPLAYS 🔝</strong></div>
+<iframe width="560" height="314" src="https://www.youtube.com/embed/jdg9oL2dJh4"></iframe>
+<figcaption class="figcaption"><a href="https://www.youtube.com/@StreamlootsES" target="_blank" class="author" rel="noopener">Streamloots en Español</a>. <a href="https://www.youtube.com/watch?v=jdg9oL2dJh4&amp;ab_channel=StreamlootsenEspa%C3%B1ol" target="_blank" class="title" rel="noopener"><em>TUTORIAL OBS STUDIO 2019 EN ESPAÑOL 🔥 - SIN LAG y para grabar GAMEPLAYS 🔝</em></a> <span class="license"><span class="sep">(</span><a href="https://www.youtube.com/static?template=terms" rel="license nofollow noopener" target="_blank">Licencia estándar de YouTube</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><br /><br /></p>
+<figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px;">
+<div class="figcaption header"><strong>Tutorial obs studio 2022, como descargar obs studio, como configurar obs studio y como usar obs studio.</strong></div>
+<iframe width="560" height="314" src="https://www.youtube.com/embed/rIxpI03JCIk" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><a href="https://www.youtube.com/@L3xis" target="_blank" class="author" rel="noopener">L3xis - YeaH</a>. <a href="https://www.youtube.com/watch?v=rIxpI03JCIk&amp;ab_channel=L3xis-YeaH" target="_blank" class="title" rel="noopener"><em>COMO CONFIGURAR OBS STUDIO 2022 [Paso a paso] 🟢 Como USAR OBS Studio</em></a> <span class="license"><span class="sep">(</span><a href="https://www.youtube.com/static?template=terms" rel="license nofollow noopener" target="_blank">Licencia estándar de YouTube</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><br /><br /></p>
+<p><strong>Cursos online</strong><br /><a href="https://openwebinars.net/cursos/shell-linux/" target="_blank" title="Curso de Shell en Linux" rel="noopener">Curso de Shell en Linux | OpenWebinars</a><br /><a href="https://openwebinars.net/cursos/fundamentos-scripting-bash/" target="_blank" title="Fundamentos de Scripting en Bash" rel="noopener">Fundamentos de Scripting en Bash | OpenWebinars</a></p>
+<p><strong>Simulador Bash</strong><br /><a href="https://www.webminal.org/" target="_blank" title="webminal" rel="noopener">www.webminal.org</a></p>
+<p><strong>Software:</strong><br /><a href="https://www.virtualbox.org/" target="_blank" title="VirtualBox" rel="noopener">Oracle VM VirtualBox</a><br /><a href="https://ubuntu.com/" target="_blank" title="Ubuntu" rel="noopener">Ubuntu</a><br /><a href="https://obsproject.com/es/" target="_blank" title="OBS" rel="noopener">Open Broadcaster Software | OBS (obsproject.com)</a><br /><a href="https://code.visualstudio.com/" target="_blank" title="Visual Studio Code" rel="noopener">Visual Studio Code - Code Editing. Redefined</a></p>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-8">
+<header class="nodeDecoration">
+<h1 id="exenode_8_Planificacintemporal" class="nodeTitle">Planificación temporal</h1>
+</header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id20-8">
+<div class="iDevice emphasis0">
+<div id="ta20_170" class="block iDevice_content">
+<p>La planificación temporal es la siguiente:</p>
+<figure class="exe-figure exe-image position-center license-CC-BY" style="width: 606px; text-align: center;">
+<div class="figcaption header"><strong>Planificación temporal</strong></div>
+<img src="Curso_B2_Productofinal_Cronologia.png" alt="Planificación temporal" title="Planificación temporal" width="606" height="1037" style="vertical-align: middle;" />
+<figcaption class="figcaption"><span class="author">Juan Manuel Vicente</span>. <a href="https://my.visme.co/view/x4nxd880-linea-temporal-proyecto" target="_blank" class="title" rel="noopener"><em>Planificación temporal</em></a> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY">CC BY</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p></p>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-6">
+<header class="nodeDecoration">
+<h1 id="exenode_6_Evaluacin" class="nodeTitle">Evaluación</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id10-6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Actividad 1</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_124_2" class="block iDevice_content">
+<div class="exe-text"><p>La primera actividad, el diseño de los guiones a implementar se va a evaluar con una lista de cotejo, la calificación será sobre 10 puntos y la lista de cotejo es la siguiente:</p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 86.5817%;">Ha realizado un esbozo del diseño en papel</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (1)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha realizado un ordinograma con alguna herramienta</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (2)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha dividido el Script en subtareas</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (2)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha asignado cada subtarea a una función/método</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (1)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha diseñado cabeceras de funciones/métodos</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (1)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha listado una pila de llamadas a métodos</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (1)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha diseñado los mensajes de error/salida</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (1)</td>
+</tr>
+<tr>
+<td style="width: 86.5817%;">Ha diseñado los parámetros de entrada del script</td>
+<td style="width: 6.96389%;">NO (0)</td>
+<td style="width: 6.45432%;">SI (1)</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper RubricIdevice em_iDevice" id="id12-6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Actividad 2</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_126_2" class="block iDevice_content">
+<table class='exe-table'><caption>Rúbrica de la segunda actividad </caption><thead><tr><th>&nbsp;</th><th>Experto</th><th>Avanzado</th><th>Aprendiz</th><th>Principiante</th><th>No puntua</th></tr></thead><tbody><tr><th>Script</th><td>El funcionamiento es correcto y completo <span>(2)</span></td><td>El funcionamiento es completo con fallos sin importancia <span>(1.5)</span></td><td>El programa funciona con fallos importantes <span>(1)</span></td><td>El programa no funciona <span>(0.5)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Resolución</th><td>Usa las estructuras de programación vistas en clase más adecuadas y además métodos o funciones para las subtareas <span>(2)</span></td><td>Usa las estructuras de programación vistas en clase, pero no las más adecuadas y emplea además métodos o funciones <span>(1.5)</span></td><td>Emplea las estructuras de programación vistas en clase, pero no son las más adecuadas <span>(1)</span></td><td>Las estructuras de programación no son las adecuadas y no resuelve el ejercicio correctamente <span>(0.5)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Identificación de componentes</th><td>Identifica variables, métodos y funciones adecuadas y además emplea nomenclatura coherente y correcta <span>(2)</span></td><td>Identifica variables, métodos y funciones adecuadas <span>(1.5)</span></td><td>Identifica algunas de las variables, métodos y funciones adecuadas <span>(1)</span></td><td>No identifica variables, métodos y funciones adecuadas <span>(0.5)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Documenta el código</th><td>Documenta completamente el código del script <span>(2)</span></td><td>Documenta alguna de las estructuras del código, pero falta alguna parte <span>(1.5)</span></td><td>Documenta vagamente el código <span>(1)</span></td><td>No documenta nada del código <span>(0.5)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Condiciones de salida</th><td>Establece condiciones de salida y de error <span>(2)</span></td><td>Establece condiciones de error <span>(1.5)</span></td><td>Establece condiciones de salida <span>(1)</span></td><td>No establece ni salida ni error <span>(0.5)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(X)</span></td></tr></tbody></table><p class="exe-rubric-authorship"><span class="author">Juan Manuel Vicente</span>. <span class="title"><em>Rúbrica de la segunda actividad </em></span> <span class="license">(<a href="http://creativecommons.org/licenses/" rel="license nofollow noopener" target="_blank" title="Creative Commons CC-BY">CC BY</a>)</span></p><ul class="exe-rubric-strings"><li class="activity">Actividad</li><li class="name">Nombre</li><li class="date">Fecha</li><li class="score">Puntuación</li><li class="notes">Notas</li><li class="reset">Reiniciar</li><li class="print">Imprimir</li><li class="apply">Aplicar</li><li class="newWindow">Ventana nueva</li></ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id13-6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Actividad 3</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Esta actividad se va a evaluar con la siguiente lista de cotejo:</p>
+<table border="1" style="width: 97.619%;">
+<tbody>
+<tr>
+<td style="width: 84.0686%;">Ha realizado pruebas de integración</td>
+<td style="width: 8.9215%;">NO (0)</td>
+<td style="width: 7.00976%;">SI (2)</td>
+</tr>
+<tr>
+<td style="width: 84.0686%;">Ha realizado pruebas unitarias</td>
+<td style="width: 8.9215%;">NO (0)</td>
+<td style="width: 7.00976%;">SI (2)</td>
+</tr>
+<tr>
+<td style="width: 84.0686%;">Ha realizado pruebas de uso</td>
+<td style="width: 8.9215%;">NO (0)</td>
+<td style="width: 7.00976%;">SI (2)</td>
+</tr>
+<tr>
+<td style="width: 84.0686%;">Ha realizado pruebas con otro usuario</td>
+<td style="width: 8.9215%;">NO (0)</td>
+<td style="width: 7.00976%;">SI (2)</td>
+</tr>
+<tr>
+<td style="width: 84.0686%;">Ha realizado pruebas en otro equipo</td>
+<td style="width: 8.9215%;">NO (0)</td>
+<td style="width: 7.00976%;">SI (2)</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper RubricIdevice em_iDevice" id="id14-6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Actividad 4</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_128_2" class="block iDevice_content">
+<table class='exe-table'><caption>Rúbrica de ejemplo (4x4)</caption><thead><tr><th>&nbsp;</th><th>EXPERTO</th><th>AVANZADO</th><th>APRENDIZ</th><th>PRINCIPIANTE</th><th>NO PUNTUA</th></tr></thead><tbody><tr><th>Sonido</th><td>El sonido es claro, sincronizado con la imagen y está editado <span>(2.5)</span></td><td>El sonido es claro y sincronizado con la imagen <span>(1.75)</span></td><td>El sonido es claro o sincronizado con la imagen pero no las dos. <span>(1)</span></td><td>El sonido no es claro, ni está sincronizado con la imagen <span>(0.25)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Calidad de imagen</th><td>Buena calidad de imagen y buenos planos <span>(2.5)</span></td><td>Buenos planos y calidad aceptable <span>(1.75)</span></td><td>Calidad aceptable <span>(1)</span></td><td>Calidad de imagen mala <span>(0.25)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Explicaciones de los scripts</th><td>Explicaciones claras y concisas, la imagen y edición ayudan a las mismas <span>(2.5)</span></td><td>Explicaciones claras, la imagen o edición ayudan a las mismas <span>(1.75)</span></td><td>Explicaciones claras <span>(1)</span></td><td>Mala explicación de los scripts <span>(0.25)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr><tr><th>Edición de vídeo</th><td>Vídeo editado con cabecera, cortes y final editado <span>(2.5)</span></td><td>Vídeo editado con cabecera, cortes o final editado <span>(1.75)</span></td><td>Vídeo editado pobremente <span>(1)</span></td><td>Vídeo tal cual se grabo <span>(0.25)</span></td><td>No entrega o fuera de plazo o se detecta copia de un compañero. <span>(0)</span></td></tr></tbody></table><p class="exe-rubric-authorship"><span class="author">Juan Manuel Vicente</span>. <span class="title"><em>Rúbrica de ejemplo (4x4)</em></span> <span class="license">(<a href="http://creativecommons.org/licenses/" rel="license nofollow noopener" target="_blank" title="Creative Commons CC-BY">CC BY</a>)</span></p><ul class="exe-rubric-strings"><li class="activity">Actividad</li><li class="name">Nombre</li><li class="date">Fecha</li><li class="score">Puntuación</li><li class="notes">Notas</li><li class="reset">Reiniciar</li><li class="print">Imprimir</li><li class="apply">Aplicar</li><li class="newWindow">Ventana nueva</li></ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-2">
+<header class="nodeDecoration">
+<h1 id="exenode_2_Guadidctica" class="nodeTitle">Guía didáctica</h1>
+</header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id4-2">
+<div class="iDevice emphasis0">
+<div id="ta4_170" class="block iDevice_content">
+<p>En esta unidad, los alumnos trabajarán con la shell del sistema operativo como lenguaje de scripting, creando y depurando sus propios scripts.</p>
+<p>Cada estudiante deberá grabar y subir dos vídeos al foro de Moodle: uno explicando los comandos utilizados y otro detallando las estructuras de programación y la finalidad del script. En ambos, la pantalla será la protagonista, pero los alumnos también deberán aparecer explicando lo que hacen.</p>
+<p>Los scripts serán distintos para cada alumno y se seleccionarán de una lista de propuestas del profesor, abordando temas clave del módulo como gestión de archivos, configuración de cuentas de usuario, recursos compartidos (como impresoras) y redes.</p>
+<p>Contarán con apuntes, prácticas previas y tiempo en clase para desarrollar el trabajo. Para grabar los vídeos se usará OBS Studio y los ejercicios se realizarán en Ubuntu, ambos software libre y de código abierto.</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper RecomendacionfpdIdevice em_iDevice em_iDevice_recomendacionfpd" id="id5-2">
+<div class="iDevice emphasis_recomendacionfpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Recomendación</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_147" class="block iDevice_content">
+<p>Los alumnos deben contar con conocimientos básicos de la consola de Linux.</p>
+<p>Aunque se recomienda que los alumnos graben sus vídeos en su domicilio, es conveniente que los ordenadores del aula cuenten con cámara web, micrófono y auriculares.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id21-2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Evaluación de la tarea</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Aquí puedes ver cómo se va a evaluar la tarea, en el apartado <a href="#exenode_6_Evaluacin" title="Evaluación">Evaluación</a> vas a tener una vista más detallada.</p>
+<table border="1" style="width: 100%; height: 364px;">
+<thead>
+<tr style="text-align: center;">
+<td style="width: 26.4298%; height: 98px;">
+<h4><span style="color: #000080;"><strong>Actividad</strong></span></h4>
+</td>
+<td style="width: 40.2368%; height: 98px;">
+<h4><span style="color: #000080;"><strong>Criterio de evaluación</strong></span></h4>
+</td>
+<td style="width: 16.6667%; height: 98px;">
+<h4><span style="color: #000080;"><strong>Técnica de evaluación</strong></span></h4>
+</td>
+<td style="width: 16.6667%; height: 98px;">
+<h4><span style="color: #000080;"><strong>Instrumento de evaluación</strong></span></h4>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 53px;">
+<td style="width: 26.4298%; height: 53px;">Diseño de los scripts solicitados en la tarea.</td>
+<td style="width: 40.2368%; height: 53px;">7.a Se han utilizado y combinado las estructuras del lenguaje para crear guiones.</td>
+<td style="width: 16.6667%; height: 53px;">Observación sistémica</td>
+<td style="width: 16.6667%; height: 53px;">Lista de cotejo</td>
+</tr>
+<tr style="height: 53px;">
+<td style="width: 26.4298%; height: 53px;">Implementación de los diseños realizados.</td>
+<td style="width: 40.2368%; height: 53px;">7.e Se han creado y probado guiones de administración de servicios.</td>
+<td style="width: 16.6667%; height: 53px;">Análisis de los productos</td>
+<td style="width: 16.6667%; height: 53px;">Rúbrica de corrección</td>
+</tr>
+<tr style="height: 80px;">
+<td style="width: 26.4298%; height: 80px;">Depura y realiza test sobre los scripts creados comprobando su funcionamiento.</td>
+<td style="width: 40.2368%; height: 80px;">7.b Se han utilizado herramientas para depurar errores sintácticos y de ejecución.</td>
+<td style="width: 16.6667%; height: 80px;">Observación sistémica</td>
+<td style="width: 16.6667%; height: 80px;">Lista de cotejo</td>
+</tr>
+<tr style="height: 80px;">
+<td style="width: 26.4298%; height: 80px;">Grabación de dos vídeos explicando los comandos empleados y los scripts resultantes.</td>
+<td style="width: 40.2368%; height: 80px;">7.i Se han documentado los guiones creados.</td>
+<td style="width: 16.6667%; height: 80px;">Análisis de los productos</td>
+<td style="width: 16.6667%; height: 80px;">Rúbrica de corrección</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-1">
+<header class="nodeDecoration">
+<h1 id="exenode_1_Crditos" class="nodeTitle">Créditos</h1>
+</header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id0-1">
+<div class="iDevice emphasis0">
+<div id="ta0_170" class="block iDevice_content">
+<p><strong>Autoría:</strong> Juan Manuel Vicente Fenoy</p>
+<p><strong>Descripción:</strong> Tarea para afianzar los conocimientos del R.A. 7 del módulo Administración de Sistemas Operativos del C.F.G.S. de Administración de Sistemas Informáticos y Redes.</p>
+<p><strong>Enlace al archivo 'elp' modificable: <a href="https://drive.google.com/file/d/1KehO5m4edOZUjZigdfVXND3o_hbwSyAG/view?usp=share_link" target="_blank" title="ELP modificable" rel="noopener">Enlace</a></strong></p>
+<p><strong>Licencia:</strong> CC BY-SA</p>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">Programación de tareas repetitivas en un Sistema Operativo</footer>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body>
+</html>
